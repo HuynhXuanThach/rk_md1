@@ -7,43 +7,61 @@
 </head>
 <body>
     <header><h1>Form đăng ký</h1></header>
+    <button><a href="/">Home</a></button>
+    <br>
+    <br>
     <main>
         <form>
-            <div>
+            <div class="input-group">
                 <label for="name">Họ tên</label>
-                <input type="text" id="name">
+                <input type="text" id="name" name="name">
                 <br>
                 <br>
             </div>
-            <div>
-                <label for="password">tên đăng nhập</label>
+            <div class="input-group">
+                <label for="username">tên đăng nhập</label>
+                <input type="text" id="username" name="username">
+                <br>
+                <br>
+            </div>
+            <div class="input-group">
+                <label for="password">mật khẩu</label>
                 <input type="text" id="password">
                 <br>
                 <br>
             </div>
-            <div>
-                <label for="pass">mật khẩu</label>
-                <input type="text" id="pass">
+            <div class="input-group">
+                <label for="reset-password">xác nhận mk</label>
+                <input type="text" id="reset-password">
                 <br>
                 <br>
             </div>
-            <div>
-                <label for="reset-pass">xác nhận mk</label>
-                <input type="text" id="reset-pass">
+            <div class="input-group">
+                <label for="gender">giới tính</label>
+                <input type="radio" id="gender" name="gender" value="male">
+                <label for="gender">Nam</label>
+                <input type="radio" name="gender" value="female" id="female">
+                <label for="female">Nữ</label>
                 <br>
                 <br>
             </div>
-            <div>
-
-                <input type="radio" name="gender" value="male" checked>
-                <input type="radio" name="gender" value="male" >
-                <label for=""></label>
-                <input type="radio" name="gender" value="famale" >
-                
-                <br>
-                <br>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="text" id="email">
             </div>
-
+            <div class="input-group">
+                <label for="Address"> Địa chỉ</label>
+                <textarea cols="30" rows="10"></textarea>
+            </div>
+            <div class="input-group">
+                <label for="dk">Thông tin điều khoản</label>
+                <button><a href="/">Đọc điều khoản</a></button>
+                <br>
+                <input type="checkbox" id="checkbox" name="dk">
+                <label for="checkbox">Tôi chấp nhận điều khoản</label>
+            </div>
+            <input type="submit" value="Đăng ký">
+            <input type="reset" value="Huỷ">
         </form>
     </main>
     
